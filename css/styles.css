@@ -1,0 +1,47 @@
+div{
+    box-sizing: border-box;
+}
+.container > div {
+    float: left;
+    padding: 15px;
+    position: relative;
+}
+.content {
+    border: 1px solid #000;
+    background-color: lightgray;
+    padding: 50px 8px 8px 8px;
+}
+.header{
+    position: absolute;
+    padding: 10px;
+    right: 15px;
+}
+.container > div:first-of-type .header{
+    background: #f00;
+    color:#fff;
+}
+
+.container > div:nth-of-type(2) .header{
+    background: #0f0;
+}
+
+.container > div:last-of-type .header{
+    background: #00f;
+    color:#fff;
+}
+
+h1 {
+    text-align: center;
+}
+
+@media (min-width: 992px){
+    .large{
+        width:33.333%;
+    }
+}
+
+@media (max-width: 991px) AND (min-width: 768px){
+    .medium{
+        width: 50%;
+    }
+}
